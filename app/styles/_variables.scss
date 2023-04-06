@@ -1,0 +1,52 @@
+//color
+$white-color: #cfcfcf;
+$black-color: #343437;
+$global-bg1: rgb(217,0,249);
+$global-bg: linear-gradient(90deg, rgba(217,0,249,1) 33%, rgba(46,1,1,1) 76%);
+
+$global-bg: linear-gradient(90deg, rgba(217,0,249,1) 33%, rgba(46,1,1,1) 76%);
+
+//backgrounds
+//$primary-bg:
+//
+////Text
+$primary-text: #5DC1B9;
+$secondary-text: #240605;
+//$secondary-text:
+//
+////buttons
+//$primary-button:
+//$secondary-button:
+//
+////Font family
+//$primary-font:
+//$secondary-font:
+
+//Font size
+$xs: 12px;
+$sm: 14px;
+$base: 16px;
+$lg: 18px;
+$xl: 20px;
+$xl2: 24px;
+$xl3: 30px;
+
+
+
+//border
+$default-border-radius: 0.5rem;
+$light-border-radius: 1.3rem;
+$medium-border-radius: 2em;
+$heavy-border-radius: 3.5em;
+//breakpoints
+$breakpoints: (
+'xs': 0,
+'sm': 576px,
+'md': 768px,
+'lg': 992px,
+'xl': 1200px,
+'xxl': 1400px
+);
+
+//pages 
+//index

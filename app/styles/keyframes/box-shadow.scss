@@ -1,0 +1,23 @@
+//box-shadow keyframe takes 3 argumens:
+//1. number
+//2. number
+//3. color;
+//4. unit
+
+@mixin boxsha($x, $y, $color, $unit: px) {
+  @keyframes box {
+    0% {
+      box-shadow: 0 0 $x+$unit  $color;
+    }
+    50% {
+      box-shadow: 0 0 $y+$unit $color;
+    }
+    100% {
+      box-shadow: 0 0 $x+$unit  $color;
+    }
+  }
+
+  animation: box 4s ease-in-out infinite;
+}
+
+

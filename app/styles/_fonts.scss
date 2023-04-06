@@ -1,0 +1,12 @@
+@use '/styles/_variables.scss' as *;
+
+@mixin font($fz) {
+  font-size: get-font-sizes($fz);       
+  @content;
+}
+
+@function get-font-sizes($fz){
+  @if map-has-key($font-size, $fz) {
+    @return map-get($font-size, $fz);
+  }
+}
