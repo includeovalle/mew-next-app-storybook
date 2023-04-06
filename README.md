@@ -10,18 +10,45 @@ El proyecto esta creado con una arquitectura atomica [referencia de youtube min 
 la estructura del proyecto en el frontend se centra principalmente en las carpetas:
 ```
 app y stories
-
-├── README.md
-├── app
-│   ├── api
-│   ├── layout.tsx
-│   ├── page.module.scss
+app
+├── about
 │   └── page.tsx
-├── public
-│   ├── next.svg
-│   ├── thirteen.svg
-│   └── vercel.svg
-├── stories
+├── api
+│   └── hello
+│       └── route.ts
+├── components
+│   ├── atoms
+│   │   └── button
+│   │       ├── Button.tsx
+│   │       └── button.module.scss
+│   ├── molecules
+│   ├── organisms
+│   ├── pages
+│   └── templates
+├── favicon.ico
+├── globals.css
+├── layout.tsx
+├── page.module.scss
+├── page.tsx
+└── styles
+    ├── components
+    │   ├── atoms
+    │   ├── molecules
+    │   ├── organisms
+    │   ├── pages
+    │   └── templates
+    └── structure
+stories
+├── Introduction.mdx
+├── atoms
+│   └── button
+│       └── Button.stories.ts
+├── molecules
+├── organisms
+├── pages
+└── templates
+
+27 directories, 19 files
 
 ```
 stage environment
