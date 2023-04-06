@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button, LeftBrow, RightBrow } from '/app/components/atoms/button/Button';
+import { Button, LeftBrow, RightBrow } from '../../../app/components/atoms/button/Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 const meta: Meta<typeof Button> = {
