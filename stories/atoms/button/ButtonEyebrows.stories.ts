@@ -1,17 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from '/app/components/atoms/button/Button';
+import { Button, LeftBrow, RightBrow } from '/app/components/atoms/button/Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 const meta: Meta<typeof Button> = {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Components/Atoms/LeftBrow',
+  component: LeftBrow,
   tags: ['autodocs'],
   argTypes: {
-    className: {
-      control: 'select',
-        options: ['button', 'submit', 'reset'],
-    },
     type:  {
       control: {
         type: 'select',
@@ -26,27 +22,9 @@ type Story = StoryObj<typeof Button>;
 // More on writing stories with args: https://storybook.js.org/docs/7.0/react/writing-stories/args
 export const Primary: Story = {
   args: {
-    primary: true,
-    label: 'Button',
+    label: 'leftBrow',
   },
 };
 
-export const Secondary: Story = {
-  args: {
-    label: 'Button',
-  },
-};
 
-export const RightBrow: Story = {
-  args: {
-    className:'rightBrow',
-    label: 'Button',
-  },
-};
 
-export const LeftBrow: Story = {
-  args: {
-    className:'leftBrow',
-    label: 'Button',
-  },
-};
