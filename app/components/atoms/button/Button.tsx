@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import styles from './button.module.scss';
+import {EYEBROWS} from './button.utils';
 
 interface ButtonProps {
   /**
@@ -34,7 +35,6 @@ export const Button = ({
   type,
   className = '',
   label,
-  onClick,
   ...props
 }: ButtonProps) => {
   const mode = primary ? styles.primary : styles.secondary;
@@ -48,15 +48,17 @@ export const Button = ({
       {...props}
     >
       {label}
+
     </button>
   );
 };
 
 //leftBrow extends Button only adds className leftBrow
 export const LeftBrow = (props: ButtonProps) => {
-  return <Button {...props} className="leftBrow" />;
+  return <Button {...props} label={EYEBROWS.left} className="leftBrow" />;
 };
+
 export const RightBrow = (props: ButtonProps) => {
-  return <Button {...props} className="rightBrow" />;
+  return <Button {...props} label={EYEBROWS.right} className="rightBrow" />;
 };
 

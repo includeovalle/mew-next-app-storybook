@@ -23,8 +23,9 @@
   @extend .default;
   background-color: $secondary-text;
   color: $white-color;
+  font-family: var(--font-roboto-slab);
   &:hover {
-    @include box.boxsha(.2,.6, $secondary-text, em);
+    @include box.boxsha(.2,.6, $white-color, em);
     background-color: $black-color;
     color: $primary-text;
     font-size: $lg;

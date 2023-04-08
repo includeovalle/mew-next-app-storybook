@@ -4,13 +4,13 @@ import { Button } from '../../../app/components/atoms/button/Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 const meta: Meta<typeof Button> = {
-  title: 'Example/Button',
+  title: 'Components/Atoms/Button',
   component: Button,
   tags: ['autodocs'],
   argTypes: {
     className: {
       control: 'select',
-        options: ['button', 'submit', 'reset'],
+        options: ['primary', 'rightBrow', 'leftBrow'],
     },
     type:  {
       control: {
@@ -31,11 +31,6 @@ export const Primary: Story = {
   },
 };
 
-export const Secondary: Story = {
-  args: {
-    label: 'Button',
-  },
-};
 
 export const RightBrow: Story = {
   args: {
