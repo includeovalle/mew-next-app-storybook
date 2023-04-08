@@ -1,0 +1,22 @@
+@use '../../../styles/_variables.scss' as *;
+@use '../../../styles/_breakpoints.scss' as bp;
+@use '../../../styles/_flexbox.scss' as flex;
+
+//observacion de sanidad
+//si se renderiza un input, dentro de un label
+//en autmatico se renderiza "" al rededor del texto label
+
+.default {
+  color: $primary-text;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.inputSection {
+  @extend .default;
+  @include flex.flexbox(row, space-evenly, center);
+  cursor: pointer;
+  width: 100%;
+
+}
