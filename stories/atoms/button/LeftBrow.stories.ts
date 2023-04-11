@@ -4,7 +4,7 @@ import {  LeftBrow } from '../../../app/components/atoms/button/Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 const meta: Meta<typeof LeftBrow> = {
-  title: 'Components/Atoms/LeftBrow',
+  title: 'Components/Atoms/button/LeftBrow',
   component: LeftBrow,
   tags: ['autodocs'],
   argTypes: {
@@ -25,7 +25,11 @@ export default meta;
 type Story = StoryObj<typeof LeftBrow>;
 
 // More on writing stories with args: https://storybook.js.org/docs/7.0/react/writing-stories/args
-export const Primary: Story = { };
+export const Primary: Story = {
+  args: {
+    label: 'LeftBrow',
+  },
+};
 
 
 

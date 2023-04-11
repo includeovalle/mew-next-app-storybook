@@ -12,6 +12,7 @@
   background-color: $black-color;
   transition: all 0.3s ease-in-out;
   color: $white-color;
+  font-family: var(--font-roboto-slab);
   &:hover {
     background-color: $black-color;
     color: $secondary-text;
@@ -21,26 +22,52 @@
 
 .brow {
   @extend .default;
-  background-color: $secondary-text;
   color: $white-color;
-  font-family: var(--font-roboto-slab);
+  font-size: clamp( lg, 1.5rem, xl);
+  padding: .5em;
   &:hover {
     @include box.boxsha(.2,.6, $white-color, em);
-    background-color: $black-color;
+    background-color: transparent;
+    backdrop-filter: hue-rotate(-80deg);
     color: $primary-text;
-    font-size: $lg;
+    max-height: calc($xl + 1.5em);
   }
 }
 
 //primary or secondary button button styles will apply to all buttons created
 .primary {
   @extend .default;
-  color: red;
+  max-height: unset;
+  min-height: unset;
 }
 
 .secondary {
   @extend .default;
   &:hover {
+  }
+}
+.submit {
+  @extend .default;
+  text-transform: capitalize;
+  height: 2rem;
+  width: 100%;
+  border-radius: 0 0 $medium-border-radius $medium-border-radius;
+  cursor: grab;
+  background-color: transparent;
+  border: 1.5px groove $primary-text;
+  color: $primary-text;
+  max-width: 250px;
+  &:hover{
+    background-color: $primary-text;
+    color: $secondary-text;
+  }
+  &:active{
+    cursor: grabbing;
+    background-color: transparent;
+    color: $primary-text;
+  }
+  @include bp.breakpoint(md, min){
+    width: 50%;
   }
 }
 

@@ -1,4 +1,25 @@
-const LEFT_EYEBROW = "entrar"
-const RIGHT_EYEBROW = "registrarse"
+const TYPE = ['submit', 'button', 'reset']
 
-export const EYEBROWS = {left:LEFT_EYEBROW, right:RIGHT_EYEBROW}
+ const RIGHT_EYEBROW = {
+  className: 'rightBrow'
+  , label: 'Registrarse'
+  , type: TYPE[1]
+}
+
+ const LEFT_EYEBROW = {
+  className: 'leftBrow'
+  , label: 'Entrar'
+  , type: TYPE[1]
+}
+
+
+ const SUBMIT = {
+  className: 'submit'
+  , label: 'Entrar'
+  , type: TYPE[0]
+}
+
+
+//transformar en un objeto de objetos
+export const ButtonUtils = { RIGHT_EYEBROW, LEFT_EYEBROW, SUBMIT };
+
