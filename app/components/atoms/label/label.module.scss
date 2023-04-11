@@ -8,6 +8,7 @@
 
 .default {
   color: $primary-text;
+
   &:first-letter {
     text-transform: uppercase;
   }
@@ -15,8 +16,17 @@
 
 .inputSection {
   @extend .default;
-  @include flex.flexbox(row, space-evenly, center);
-  cursor: pointer;
+  @include flex.flexbox(column, center, flex-start);
+  gap:  0.5rem;
+  cursor: s-resize;
   width: 100%;
 
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $primary-text;
+    border-radius: unset;
+    width: 100%;
+  }
 }
