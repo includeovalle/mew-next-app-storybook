@@ -1,0 +1,24 @@
+@use '../../../styles/_variables.scss' as *;
+@use '../../../styles/_breakpoints.scss' as bp;
+@use '../../../styles/keyframes/box-shadow.scss' as box;
+@use '../../../styles/_flexbox.scss' as flex;
+
+.default {
+}
+
+.eyebrowContainer {
+  @include flex.flexbox(row, center, center);
+  width: 100%;
+  height: auto;
+  gap: .2rem;
+  max-width: calc(650px + 3rem);
+
+}
+ 
+
+.inputSection {
+  @include flex.flexbox(row, space-between, center);
+  width: 100%;
+  height: auto;
+  gap: .2rem;
+}
