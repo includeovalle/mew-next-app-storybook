@@ -55,22 +55,16 @@ export const Button = ({
 
 //leftBrow extends Button only adds className leftBrow
 export const LeftBrow = (props: ButtonProps) => {
-
   const {LEFT_EYEBROW} = ButtonUtils;
-  const {className, label, type} = LEFT_EYEBROW;
-
-  return <Button {...props} primary type={type} label={label} className={className}/>;
+  const {className, label, } = LEFT_EYEBROW;
+  console.log(className)
+  return <Button {...props}  className={className}/>;
 };
 
 export const RightBrow = (props: ButtonProps) => {
-  const {RIGHT_EYEBROW} = ButtonUtils;
-  const {className, label, type} = RIGHT_EYEBROW;
-  
-  return <Button {...props} primary  type={type} label={label} className={className}/>;
+  return <Button {...props}  className="rightBrow" />;
 };
 
 export const Submit = (props: ButtonProps) => {
-  const {SUBMIT} = ButtonUtils;
-  const {className, label, type} = SUBMIT;
-  return <Button {...props}  type={type} label={label} className={className}/>;
+  return <Button {...props} type="submit" />;
 };

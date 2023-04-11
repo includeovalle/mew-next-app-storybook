@@ -1,0 +1,25 @@
+@use '../../../styles/_variables.scss' as *;
+@use '../../../styles/_breakpoints.scss' as bp;
+@use '../../../styles/_flexbox.scss' as flex;
+
+
+.heroImage {
+  position: relative;
+  height: 25vh;
+  width: 100%;
+  overflow: hidden;
+  @include bp.breakpoint(md, min){
+    @include flex.flexbox(row, center, center);
+    height: 50vh;
+    width: 100%;
+    max-width: 900px;
+    max-height: 350px;
+  }
+
+  img {
+    object-fit: cover;
+  @include bp.breakpoint(md, min){
+    object-fit: none;
+  }
+  }
+}

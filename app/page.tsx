@@ -1,16 +1,27 @@
-'use client'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.scss'
-import {RightBrow, LeftBrow} from './components/atoms/button/Button';
+"use client";
+import LoginForm from './components/organisms/LoginForm';
+import React, { useState } from 'react';
+//import h1
+import { IndexStructure } from './components/atoms/main/Main';
+import { HeroImage } from './components/atoms/image/Image';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [isLogin, setIsLogin] = useState(true);
+  //<InputSection  primary className={} label name placeholder type />
+  //@TODO check on inputSection on change prop
+
   return (
-      <main className={styles.main}>
-      <RightBrow label="this" />
-      <LeftBrow label="this not" />
-      </main>
+    <>
+      <IndexStructure>
+
+               
+        <HeroImage />
+        {
+          isLogin ?( <>  <LoginForm setState={setIsLogin} /> </>)
+            : <h1>Register</h1>
+        }
+      </IndexStructure>
+    </>
   )
 }
