@@ -16,7 +16,7 @@ interface ButtonProps {
    * button type
    * @default 'button'
    */
-  type?: 'button' | 'submit' | 'reset' | undefined;
+  type?: string;
   /*
    * Button contents
    */
@@ -44,7 +44,6 @@ export const Button = ({
   return (
     <button
       className={[mode, localClassName].join(' ')}
-      type={type}
       {...props}
     >
       {label}

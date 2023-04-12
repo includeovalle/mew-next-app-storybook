@@ -1,7 +1,7 @@
-import { Title } from '/app/components/atoms/h1/H1';
-import FormEyebrows from '/app/components/molecules/form/FormEyebrows';
-import { Form } from '/app/components/atoms/form/Form';
-import { PasswordInput, EmailInput } from '/app/components/molecules/inputsection/InputSection';
+import { Title } from '../../atoms/h1/H1';
+import FormEyebrows from '../../molecules/form/FormEyebrows';
+import { Form } from '../../atoms/form/Form';
+import { PasswordInput, EmailInput } from '../../molecules/inputsection/InputSection';
 import { Submit } from '../../atoms/button/Button';
 import React, { useState } from 'react';
 
