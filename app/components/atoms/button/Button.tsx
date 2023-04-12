@@ -57,16 +57,19 @@ export const LeftBrow = (props: ButtonProps) => {
   const { LEFT_EYEBROW } = ButtonUtils;
   const { className, } = LEFT_EYEBROW;
   console.log(className)
-  return <Button {...props} className={className} />;
+  return <Button {...props} primary className={className} />;
 };
 
 export const RightBrow = (props: ButtonProps) => {
 
   const { RIGHT_EYEBROW } = ButtonUtils;
   const { className } = RIGHT_EYEBROW;
-  return <Button {...props} className={className}/>;
+  return <Button {...props} primary className={className}/>;
 };
 
 export const Submit = (props: ButtonProps) => {
-  return <Button {...props} type="submit" />;
+  const { SUBMIT } = ButtonUtils;
+  const { className } = SUBMIT;
+  console.log(SUBMIT)
+  return <Button {...props} className={className} />;
 };

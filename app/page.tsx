@@ -1,5 +1,6 @@
 "use client";
 import LoginForm from './components/organisms/form/LoginForm';
+import RegisterForm from './components/organisms/form/RegisterForm';
 import React, { useState } from 'react';
 //import h1
 import { IndexStructure } from './components/atoms/main/Main';
@@ -19,7 +20,8 @@ export default function Home() {
         <HeroImage />
         {
           isLogin ?( <>  <LoginForm setState={setIsLogin} /> </>)
-            : <h1>Register</h1>
+           : <RegisterForm setState={setIsLogin} />
+            
         }
       </IndexStructure>
     </>

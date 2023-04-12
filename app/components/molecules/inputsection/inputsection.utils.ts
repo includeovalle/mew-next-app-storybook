@@ -1,6 +1,6 @@
 const classNames = { inputSection: 'inputSection' }
 
-export const PASSWORD_INPUT = {
+const LOGIN_PASSWORD = {
   className: classNames.inputSection
   , label: 'Contraseña:'
   , placeholder: 'Ingresa tu password'
@@ -8,10 +8,12 @@ export const PASSWORD_INPUT = {
   , name: 'password'
 }
 
-export const EMAIL_INPUT = {
+const LOGIN_EMAIL = {
   className: classNames.inputSection
   , label: 'Correo electrónico:'
   , placeholder: 'Ingresa tu correo electrónico'
   , type: 'email'
   , name: 'email'
 }
+
+export const INPUTS = {loginEmail: LOGIN_EMAIL, loginPass:LOGIN_PASSWORD} 
