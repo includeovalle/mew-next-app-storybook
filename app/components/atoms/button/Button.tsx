@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import styles from './button.module.scss';
-import {ButtonUtils} from './button.utils';
+import { ButtonUtils } from './button.utils';
 
 interface ButtonProps {
   /**
@@ -55,14 +55,17 @@ export const Button = ({
 
 //leftBrow extends Button only adds className leftBrow
 export const LeftBrow = (props: ButtonProps) => {
-  const {LEFT_EYEBROW} = ButtonUtils;
-  const {className, label, } = LEFT_EYEBROW;
+  const { LEFT_EYEBROW } = ButtonUtils;
+  const { className, } = LEFT_EYEBROW;
   console.log(className)
-  return <Button {...props}  className={className}/>;
+  return <Button {...props} className={className} />;
 };
 
 export const RightBrow = (props: ButtonProps) => {
-  return <Button {...props}  className="rightBrow" />;
+
+  const { RIGHT_EYEBROW } = ButtonUtils;
+  const { className } = RIGHT_EYEBROW;
+  return <Button {...props} className={className}/>;
 };
 
 export const Submit = (props: ButtonProps) => {

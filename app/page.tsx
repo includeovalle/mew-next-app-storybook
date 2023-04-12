@@ -1,5 +1,5 @@
 "use client";
-import LoginForm from './components/organisms/LoginForm';
+import LoginForm from './components/organisms/form/LoginForm';
 import React, { useState } from 'react';
 //import h1
 import { IndexStructure } from './components/atoms/main/Main';
