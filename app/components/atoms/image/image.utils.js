@@ -1,3 +1,3 @@
-import indexHero from  '/public/assets/index.png';
+import indexHero from  '/public/assets/index.jpeg';
 
 export const images = { hero: indexHero };
