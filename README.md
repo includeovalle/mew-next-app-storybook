@@ -10,7 +10,7 @@ El proyecto esta creado con una arquitectura atomica [referencia de youtube min 
 la estructura del proyecto en el frontend se centra principalmente en las carpetas:
 ```
 app y stories
-app
+app/
 ├── about
 │   └── page.tsx
 ├── api
@@ -18,38 +18,66 @@ app
 │       └── route.ts
 ├── components
 │   ├── atoms
-│   │   └── button
-│   │       ├── Button.tsx
-│   │       └── button.module.scss
+│   │   ├── button
+│   │   │   ├── Button.tsx
+│   │   │   ├── button.module.scss
+│   │   │   └── button.utils.ts
+│   │   ├── form
+│   │   │   ├── Form.tsx
+│   │   │   └── form.module.scss
+│   │   ├── h1
+│   │   │   ├── H1.tsx
+│   │   │   └── h1.module.scss
+│   │   ├── image
+│   │   │   ├── Image.tsx
+│   │   │   ├── image.module.scss
+│   │   │   └── image.utils.js
+│   │   ├── input
+│   │   │   ├── Input.tsx
+│   │   │   ├── input.module.scss
+│   │   │   └── input.utils.ts
+│   │   ├── label
+│   │   │   ├── Label.tsx
+│   │   │   └── label.module.scss
+│   │   ├── main
+│   │   │   ├── Main.tsx
+│   │   │   └── main.module.scss
+│   │   ├── section
+│   │   │   ├── Section.tsx
+│   │   │   └── section.module.scss
+│   │   └── ul
+│   │       ├── Ul.tsx
+│   │       └── ul.module.scss
 │   ├── molecules
-│   ├── organisms
-│   ├── pages
-│   └── templates
-├── favicon.ico
+│   │   ├── form
+│   │   │   ├── FormEyebrows.tsx
+│   │   │   └── form.utils.ts
+│   │   └── inputsection
+│   │       ├── InputSection.tsx
+│   │       └── inputsection.utils.ts
+│   └── organisms
+│       └── form
+│           ├── LoginForm.tsx
+│           ├── RegisterForm.tsx
+│           └── form.utils.tsx
+├── foro
+│   ├── foro.tsx
+│   └── page.tsx
 ├── globals.css
+├── icon.ico
 ├── layout.tsx
 ├── page.module.scss
 ├── page.tsx
 └── styles
-    ├── components
-    │   ├── atoms
-    │   ├── molecules
-    │   ├── organisms
-    │   ├── pages
-    │   └── templates
-    └── structure
-stories
-├── Introduction.mdx
-├── atoms
-│   └── button
-│       └── Button.stories.ts
-├── molecules
-├── organisms
-├── pages
-└── templates
+    ├── _breakpoints.scss
+    ├── _flexbox.scss
+    ├── _fonts.scss
+    ├── _variables.scss
+    ├── globals.scss
+    └── keyframes
+        └── box-shadow.scss
 
-27 directories, 19 files
-
+23 directories, 43 files
 ```
 stage environment
 https://mew-next-app-storybook.vercel.app/
