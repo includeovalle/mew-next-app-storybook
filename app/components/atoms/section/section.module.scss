@@ -31,7 +31,7 @@
   width: 100%;
   border-radius: $light-border-radius;
   backdrop-filter: hue-rotate(-80deg);
-  padding: 2rem;
+  padding: 1.2rem;
   @include bp.breakpoint(md, min){
     position: relative;
     min-height: auto;
