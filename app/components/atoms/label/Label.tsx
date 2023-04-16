@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './label.module.scss';
 
-interface LabelProps {
+export interface LabelProps {
   /**
    * What background color to use
    */

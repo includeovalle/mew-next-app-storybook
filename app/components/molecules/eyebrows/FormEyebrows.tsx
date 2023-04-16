@@ -1,7 +1,7 @@
 import React from 'react';
 import { EyebrowContainer } from '../../atoms/section/Section';
 import { RightBrow, LeftBrow } from '../../atoms/button/Button';
-import { FORM_EYEBROWS } from './form.utils';
+import { FORM_EYEBROWS } from './eyebrows.utils';
 
 interface FormEyebrowsProps {
 

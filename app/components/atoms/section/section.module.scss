@@ -15,10 +15,27 @@
 
 }
  
-
 .inputSection {
   @include flex.flexbox(row, space-between, center);
   width: 100%;
   height: auto;
   gap: .2rem;
+}
+
+.formContainer {
+  @include flex.flexbox(column, flex-start, center);
+  @include box.boxsha(.0,.4, $secondary-text, em);
+  gap: 1em;
+  position: relative;
+  min-height: 30vh;
+  width: 100%;
+  border-radius: $light-border-radius;
+  backdrop-filter: hue-rotate(-80deg);
+  padding: 2rem;
+  @include bp.breakpoint(md, min){
+    position: relative;
+    min-height: auto;
+    min-width: 30vw;
+    max-width: 650px;
+  }
 }

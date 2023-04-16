@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './input.module.scss';
 
-interface InputProps {
+export interface InputProps {
   /**
    * Is this the principal call to action on the page?
    */
