@@ -39,7 +39,7 @@ export const EmailInput = ({ onChange }: any) => {
   )
 }
 
-export const RawInput = ({ name, onChange, placeholder, type }: InputProps, { className, label }: LabelProps) => {
+export const RawInput = ({ name, onChange, placeholder, type, className, label }: InputProps & LabelProps) => {
   return (
     <>
       <Label label={label} className={className}>
