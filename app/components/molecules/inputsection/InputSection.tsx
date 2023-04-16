@@ -5,7 +5,7 @@ import { INPUTS } from './inputsection.utils';
 
 interface TextInputProps {
   label: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+         onChange: (e: any) => void;
 }
 
 //Password type function
@@ -43,7 +43,7 @@ export const RawInput = ({ name, onChange, placeholder, type, className, label }
   return (
     <>
       <Label label={label} className={className}>
-        <Input name={name} onChange={onChange} className={className} placeholder={placeholder} type={type} />
+        <Input name={name} onChange={onChange} placeholder={placeholder} type={type} />
       </Label >
     </>
   )

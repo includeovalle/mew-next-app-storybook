@@ -7,7 +7,7 @@ const LoginForm = () => {
   const [data, setData] = useState({});
 
   //e is an javascript event whichh is a synthetic event with name and value
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: any) => {
     const temp = e.target;
     setData({ ...data, [temp.name]: temp.value });
   };
@@ -19,9 +19,9 @@ const LoginForm = () => {
 
   return (
     <>
-    <Form onSubmit={(e:any) => SubmitHandler(e)}>
-        <EmailInput onChange={(e:any) => handleChange(e)} />
-        <PasswordInput onChange={(e:any) => handleChange(e)} />
+      <Form onSubmit={(e: any) => SubmitHandler(e)}>
+        <PasswordInput onChange={(e: any) => handleChange(e)} />
+        <EmailInput onChange={(e: any) => handleChange(e)} />
         <Submit label="submitear" type="submit" />
       </Form>
     </>
