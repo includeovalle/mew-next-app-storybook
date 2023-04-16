@@ -1,5 +1,4 @@
-
-const RIGHT_EYEBROW ={
+const RIGHT_EYEBROW = {
   label: 'Registrarme',
   primary: true,
   type: 'button'

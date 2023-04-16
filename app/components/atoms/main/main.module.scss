@@ -6,12 +6,11 @@
 
 .indexContainer {
   @include flex.flexbox(column, flex-start, center);
-  gap: 2em;
   padding: 2.5rem;
+  gap: 3em;
   height: 100vh;
   @include bp.breakpoint(md, min){
   @include flex.flexbox(column, center, center);
-  gap: 5rem;
     gap: 1.2rem;
   }
 }
