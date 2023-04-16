@@ -39,3 +39,6 @@ export const EyebrowContainer = (props: SectionProps) => {
   return <Section {...props} className="eyebrowContainer"  />;
 };
 
+export const FormContainer = (props: SectionProps) => {
+  return <Section {...props} className="formContainer"  />;
+};

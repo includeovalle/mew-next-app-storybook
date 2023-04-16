@@ -23,14 +23,13 @@
 .brow {
   @extend .default;
   color: $white-color;
-  font-size: clamp( lg, 1.5rem, xl);
+  font-size: clamp( $lg, 1.1rem, $xl);
   padding: .5em;
   &:hover {
     @include box.boxsha(.2,.6, $white-color, em);
-    background-color: transparent;
     backdrop-filter: hue-rotate(-80deg);
     color: $primary-text;
-    max-height: calc($xl + 1.5em);
+    max-height: calc($xl + 1.1em);
   }
 }
 
