@@ -8,7 +8,7 @@
   @include flex.flexbox(column, flex-start, center);
   padding: 2.5rem;
   gap: 3em;
-  height: 100vh;
+  height: 100%;
   @include bp.breakpoint(md, min){
   @include flex.flexbox(column, center, center);
     gap: 1.2rem;
