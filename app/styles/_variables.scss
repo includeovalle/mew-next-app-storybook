@@ -1,0 +1,67 @@
+//color
+$white: #dfe6e9;
+$white-hover: #f1f2f6;
+$black: #343437;
+$primary: #383d45;
+$primary-hov: purple;
+$secondary: rgb(227,61,51);
+$secondary-tint: rgba(227,61,51,.2);
+$tertiary: #cc9900;
+
+//backgrounds
+$primary-bg: rgb(241,241,241);
+$default-border-bg: rgba(114, 119, 120, .3);
+
+//Text
+//$primary-text:
+$default-text-shadow: 0px 2px 4px $black;
+$default-yellow-text-shadow: 0px 2px 4px #ffa726;
+//$secondary-text:
+
+//defaults
+$default-button-size: 2em;
+//border
+$default-border-radius: 8px;
+//padding
+$default-padding: 2em;
+$page-padding: .5em 2em;
+$default-padding-inset: .5em;
+
+//hero
+$hero-height: 40vh;
+$logo-min-width: 120px;
+$logo-min-height: 50px;
+$logo-max-width: 160px;
+//$primary-button:
+//$secondary-button:
+
+//height
+$header-height: 55px;
+//Font family
+//$primary-font:
+//$secondary-font:
+
+$font-clamp: clamp(1.5rem, 2vw, 2rem);
+$title-clamp: clamp(2.5rem, 5vw, 3.5rem);
+//Font size
+$font-size:(
+'xs': 12px,
+'sm': 14px,
+'base': 16px,
+'lg': 18px,
+'xl': 20px,
+'xxl': 24px,
+'xxxl': 30px,
+);
+
+
+//breakpoints
+$breakpoints: (
+'xs': 0,
+'sm': 576px,
+'md': 768px,
+'lg': 992px,
+'xl': 1200px,
+'xxl': 1400px
+);
+
