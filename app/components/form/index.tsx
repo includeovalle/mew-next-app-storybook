@@ -16,6 +16,6 @@ const Index = forwardRef(({ className, children, buttonText, onSubmit }: FormInt
 }
 );
 
-Index.displayName = 'Index';
+Index.displayName = 'Form';
 export default Index;
 

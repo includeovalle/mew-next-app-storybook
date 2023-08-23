@@ -5,6 +5,7 @@
 body {
     background: $primary-bg;
     background: linear-gradient(180deg, $primary-bg 12%, rgba(191,202,204,1) 82%);
+    background-repeat: no-repeat;
     font-size: $font-clamp;
     font-weight: 100;
 
