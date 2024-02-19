@@ -1,0 +1,13 @@
+//export { default as Tasks } from './table/';
+export { default as ButtonModal } from './modal/';
+export { LabelModal as LabelModal } from './modal/';
+export { default as Modal } from './modal/';
+export { default as Header } from './header/';
+export { default as LeftMenu } from './left_menu/';
+//export { default as Card } from './card/';
+export { default as Keymap } from './keymap/';
+export { default as TextContainer } from './text_container/';
+//export { default as Footer } from './footer/';
+//export { default as ContactHandler } from './contact_handler/';
+//export { default as Banner  } from './service_banner/';
+export { default as Register } from './register/';

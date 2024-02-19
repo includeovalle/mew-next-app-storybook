@@ -1,0 +1,108 @@
+@use '@/app/styles/_breakpoints.scss' as bp;
+@use '@/app/styles/_variables.scss' as *;
+@use '@/app/styles/_flexbox.scss' as flex;
+@use '@/app/styles/_classes.scss' as class;
+@use '@/app/styles/_keyframes.scss' as keyframes;
+
+.default {
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    ol {
+        height: inherit;
+    }
+    a {
+        height: inherit;
+    }
+    li {
+        font-size: 1.5rem;
+        height: inherit;
+        @extend .font-cap-clamp;
+    }
+}
+
+.active{
+    background-color: $secondary-tint;
+    //text-decoration: overline underline $secondary;
+}
+
+.two-columns{
+@extend .default;
+  @include flex.row(space-between, center);
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem; 
+a {
+    width: calc(50% - 1rem);
+}
+  li{
+    flex: 0 0 calc(50% - 1rem);
+    font-size: 1rem;
+    position: relative;
+}
+}
+
+.nav{ 
+    @extend .default;
+    display: none;
+    line-height:  2;
+
+    @include bp.breakpoint(md, min) {
+        @include flex.row(center, flex-end);
+        max-width: 550px;
+        transition: all 0.3s ease-in-out;
+        border-bottom: 1px solid $secondary;
+        line-height: unset;
+        li {
+            padding: 0 1rem;
+            transition: inherit;
+
+            @media (prefers-color-scheme: dark) {
+                &:hover {
+                    text-shadow: 0px 0px 20px $white-hover;
+                }
+            }
+            &:first-letter {
+            }
+            &:hover {
+                transform: scale(1.15);
+                &:first-letter {
+                }
+            }
+        }
+    }
+}
+
+.mobileNav{
+    @extend .default;
+    margin-top: 5em;
+    li {
+        padding: 1rem 0;
+        height: auto;
+        padding: $default-padding-inset;
+        border-bottom: 1px solid $secondary;
+    }
+}
+
+.servicios {
+    padding: $default-padding-inset;
+    font-size: 1rem;
+    li {
+        @extend .first-cap;
+        padding-left: 1*$default-padding-inset;
+        text-shadow: $default-text-shadow;
+        list-style: none;
+        color: $white;
+
+        &:before{
+            content: '\2708';
+            color: $tertiary;
+            //@include keyframes.changeColor($tertiary, $white, 3s);
+            @include keyframes.textShadow($black, 3s);
+            left: 1*$default-padding-inset;
+            position: absolute;
+        }
+    }
+
+}

@@ -1,0 +1,43 @@
+
+@mixin changeColor($color, $secondColor, $duration) {
+    @include colorchange($color, $secondColor, $color, $duration);
+}
+@mixin textShadow($color, $duration) {
+    @include shadow($color, $duration);
+}
+
+
+@mixin colorchange($starting-color, $midway-color, $ending-color, $animation-duration) {
+    animation: colorChangeAnimation $animation-duration infinite;
+
+    @keyframes colorChangeAnimation {
+        0% {
+            color: $starting-color;
+        }
+        50% {
+            color: $midway-color;
+        }
+        100% {
+            color: $ending-color;
+        }
+    }
+}
+
+@mixin shadow($color, $duration) {
+    animation: textShadowAnimation $duration infinite;
+
+    @keyframes textShadowAnimation {
+        0% {
+            margin-left: 0px;
+            text-shadow: 0px 0px 2px $color;
+        }
+        50% {
+            margin-left: 6px;
+            text-shadow: 0px 0px 8px $color;
+        }
+        100% {
+            margin-left: 0px;
+            text-shadow: 0px 0px 0px $color;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@use '../../styles/_breakpoints.scss' as bp;
+@use '../../styles/_flexbox.scss' as flex;
+@use '../../styles/_variables.scss' as *;
+@use '../../styles/_classes.scss';
+
+.default{
+    @extend .first-cap;
+    text-align: justify;
+    word-spacing: 2px;
+}
+
+.card{
+    @extend  .title-cap-clamp;
+}
+
+.title{
+    @extend .default;
+}
