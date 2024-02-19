@@ -27,6 +27,22 @@
     //text-decoration: overline underline $secondary;
 }
 
+.two-columns{
+@extend .default;
+  @include flex.row(space-between, center);
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem; 
+a {
+    width: calc(50% - 1rem);
+}
+  li{
+    flex: 0 0 calc(50% - 1rem);
+    font-size: 1rem;
+    position: relative;
+}
+}
+
 .nav{ 
     @extend .default;
     display: none;

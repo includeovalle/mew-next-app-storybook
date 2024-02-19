@@ -12,6 +12,7 @@ export { CardContainer as CardContainer } from './section_container/index';
 export { ParagraphContainer as ParagraphContainer } from './section_container/index';
 export { RowContainer as RowContainer } from './section_container/index';
 export { ColContainer as ColContainer } from './section_container/index';
+export { LeftContainer as LeftContainer } from './section_container/index';
 export { default as Navbar } from './navbar_hamburger/index';
 export { default as CustomImage } from './image/index';
 export { default as Htag } from './h_component/index';

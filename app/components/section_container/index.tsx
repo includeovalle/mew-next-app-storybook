@@ -26,6 +26,13 @@ const Index = ({ children, className, main = false }: Props) => {
     );
 };
 
+export function LeftContainer({ children, className="left-container", main = false }: Props) {
+    return (
+        <Index main={main} className={className}>
+            {children}
+        </Index>
+    );
+}
 
 export function MainContainer({ children, className, main = true }: Props) {
     return (

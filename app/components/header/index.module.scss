@@ -19,7 +19,6 @@
         min-height: $logo-min-height;
         width: 100%;
         @include flex.row(space-between, center);
-        margin-bottom: 1rem;
     }
 }
 

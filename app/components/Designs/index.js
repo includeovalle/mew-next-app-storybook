@@ -2,7 +2,8 @@
 export { default as ButtonModal } from './modal/';
 export { LabelModal as LabelModal } from './modal/';
 export { default as Modal } from './modal/';
-//export { default as Header } from './header/';
+export { default as Header } from './header/';
+export { default as LeftMenu } from './left_menu/';
 //export { default as Card } from './card/';
 export { default as Keymap } from './keymap/';
 export { default as TextContainer } from './text_container/';

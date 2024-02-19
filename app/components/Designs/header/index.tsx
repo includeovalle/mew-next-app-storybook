@@ -4,8 +4,10 @@ import React from "react";
 
 const Index = () => {
 
-    const webMenu = ['nosotros', 'servicios', 'contacto']
-    const mobileMenu = ['inicio', 'nosotros', 'servicios', 'contacto']
+    const webMenu = [
+        ]
+    const mobileMenu = [
+]
 
     const href =  "/";
     const alt =  "soultech inicio";
@@ -14,7 +16,6 @@ const Index = () => {
 
         <Header className={'header__two-items'} >
             <CustomImage links href={href} className={'logo'} src={logo} alt={alt} />
-            <Navbar exact links lis={webMenu} otherLis={mobileMenu} />
         </Header>
     );
 };

@@ -3,8 +3,7 @@ import {Register} from "@/app/components/Designs/";
 export default function Home() {
   return (
       <main >
-      <Register />
-      
+      esto es main
       </main>
   )
 }

@@ -21,6 +21,19 @@
     padding: $page-padding;
 }
 
+.left-container{
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    &_active{
+    transition: all 0.3s ease-in-out;
+        @include flex.col(center, center);
+        max-width: 100%;
+    }
+}
+
 .inner-container{
     @extend .default;
     overflow: auto;
