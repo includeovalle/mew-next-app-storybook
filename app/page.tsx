@@ -1,8 +1,10 @@
-import {Register} from "@/app/components/Designs/";
+import {LeftMenu } from "@/app/components/Designs/";
 
 export default function Home() {
   return (
       <main >
+
+        <LeftMenu />
       esto es main
       </main>
   )

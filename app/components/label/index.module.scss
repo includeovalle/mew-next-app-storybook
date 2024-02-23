@@ -73,9 +73,9 @@
             }
             &:active {
                 transition: inherit;
-                border: 2px solid $primary-hov;
+                border: 2px solid $primary-tint;
                 border-radius: 35px;
-                background-color: $primary-hov;
+                background-color: $primary-tint;
             }
         }
 
@@ -87,7 +87,7 @@
         -webkit-appearance: none; /* Hides the default appearance in WebKit (Safari, Chrome) */
         width: 16px;
         height: 16px;
-        background-color: $primary-hov;
+        background-color: $primary-tint;
         //border: 1px solid $black;
         border-radius: 50%;
         cursor: pointer;
@@ -97,7 +97,7 @@
             border: unset;
         }
         &:active {
-            border: 1px solid $primary-hov;
+            border: 1px solid $primary-tint;
         }
     }
 

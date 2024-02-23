@@ -1,12 +1,14 @@
+import { LeftMenu } from "@/app/components/Designs/";
+import { InnerContainer } from "@/app/components/";
 import React from "react";
-import styles from "./index.module.scss";
 
-const Index = ( ) => {
+const Index = () => {
 
   return (
-    <div >
-      ali
-    </div>
+      <InnerContainer>
+        <LeftMenu />
+        esto es ali
+      </InnerContainer>
   );
 };
 
