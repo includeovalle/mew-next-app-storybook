@@ -1,5 +1,6 @@
 @use '@/app/styles/_variables.scss' as *;
 @use '@/app/styles/_flexbox.scss' as flex;
+@use '@/app/styles/_keyframes.scss' as key;
 @use '@/app/styles/_breakpoints.scss' as bp;
 @use '@/app/styles/_classes.scss' as class;
 
@@ -23,11 +24,37 @@
 }
 
 .circle {
-    height: 40px;
-    width: 40px;
+    @include key.bounce(1s);
+    height: 60px;
+    width: 60px;
     margin: 0;
     transition: all 0.3s ease-in-out;
-    clip-path: circle(45% );
+    border-radius: 50%;
+    margin: 1rem ;
+    background-color: transparent;
+    border: 1px groove $secondary-tint;
+    color: $white-tint;
+    font-family: inherit;
+    text-shadow: $default-text-shadow;
+
+    &:hover {
+        @include key.bounce(1s);
+        @include key.borderChange($primary, $secondary-tint, 4s);
+        cursor: pointer;
+    }
+
+    &_active {
+        @extend .circle;
+        border: 1px solid $secondary-tint;
+        &:hover {
+            @include key.bounce(1s);
+            cursor: pointer;
+        }
+    }
+
+    @media(width > 768px) {
+        display: none;
+    }
 }
 
 
@@ -94,7 +121,7 @@
     width: 100%;
     &:hover{
         cursor: pointer;
-        background-color: $primary-hov;
+        background-color: $primary-tint;
     }
 }
 

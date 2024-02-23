@@ -2,6 +2,7 @@
 @mixin changeColor($color, $secondColor, $duration) {
     @include colorchange($color, $secondColor, $color, $duration);
 }
+
 @mixin textShadow($color, $duration) {
     @include shadow($color, $duration);
 }
@@ -38,6 +39,94 @@
         100% {
             margin-left: 0px;
             text-shadow: 0px 0px 0px $color;
+        }
+    }
+}
+
+
+@mixin fadeOutLeft($duration) {
+    animation: fadeOutLeft $duration ease-in-out;
+  @keyframes fadeOutLeft {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  }
+  }
+  }
+
+
+  @mixin fadeInDown($duration) {
+    animation: fadeInDown $duration ease-in-out;
+      @keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+  }
+
+
+  @mixin bounce($duration) {
+    animation: bounceIn $duration ease-in-out;
+
+@keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  20% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+  -webkit-transform: scale3d(.9, .9, .9);
+  transform: scale3d(.9, .9, .9);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(1.03, 1.03, 1.03);
+  transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+  -webkit-transform: scale3d(.97, .97, .97);
+  transform: scale3d(.97, .97, .97);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+  }
+
+//border color
+@mixin borderChange($color, $colorTwo, $duration) {
+    animation: borderChange $duration infinite;
+
+    @keyframes borderChange {
+        0% {
+            border-color: $color;
+        }
+        50% {
+            border-color: $colorTwo;
+        }
+        100% {
+            border-color: $color;
         }
     }
 }

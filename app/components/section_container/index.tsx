@@ -26,6 +26,7 @@ const Index = ({ children, className, main = false }: Props) => {
     );
 };
 
+
 export function LeftContainer({ children, className="left-container", main = false }: Props) {
     return (
         <Index main={main} className={className}>
@@ -43,7 +44,7 @@ export function MainContainer({ children, className, main = true }: Props) {
 }
 
 
-export function InnerContainer({ children, main = false, className }: Props) {
+export function InnerContainer({ children, main = false, className="inner-container" }: Props) {
     return (
         <Index className={className} main={main}>
             {children}
@@ -59,7 +60,8 @@ export function CardContainer({ children, main = false, className='card' }: Prop
     );
 }
 
-export function KeymapContainer({ children, main = false, className='keymap' }: Props) {
+
+export function VisionContainer({ children, main = false, className='vision-general' }: Props) {
     return (
         <Index className={className} main={main}>
             {children}
@@ -67,28 +69,6 @@ export function KeymapContainer({ children, main = false, className='keymap' }: 
     );
 }
 
-export function ParagraphContainer({ children, main = false, className='paragraph' }: Props) {
-    return (
-        <Index className={className} main={main}>
-            {children}
-        </Index>
-    );
-}
 
-export function RowContainer({ children, main = false, className='row-container' }: Props) {
-    return (
-        <Index className={className} main={main}>
-            {children}
-        </Index>
-        );
-}
-
-export function ColContainer({ children, main = false, className='col-container' }: Props) {
-    return (
-        <Index className={className} main={main}>
-            {children}
-        </Index>
-        );
-}
 
 export default Index;

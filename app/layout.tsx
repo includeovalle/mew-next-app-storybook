@@ -1,9 +1,9 @@
 import './styles/globals.scss'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { Header, LeftMenu} from '@/app/components/Designs'
-
+import { Inter, Orbitron } from 'next/font/google'
+import { Header} from '@/app/components/Designs'
 const inter = Inter({ subsets: ['latin'] })
+const orbitron = Orbitron({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'mew game',
@@ -18,10 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${orbitron.className}`}>
         <Header />
-        <LeftMenu />
-        {children}</body>
+        <main>
+        {children}
+        </main>
+      </body>
     </html>
   )
 }
