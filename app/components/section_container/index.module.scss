@@ -33,7 +33,7 @@
     position: relative;
     transition: all 0.3s ease-in-out;
     &_active{
-    transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         @include flex.col(flex-start, center );
         flex-direction: column;
     }
@@ -81,33 +81,62 @@
 
 .vision-general {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns:.5fr 1fr ;
     background-color: pink;
-    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr  0.2fr 1fr;
+    height: 40vh;
+    grid-template-rows: repeat(3, .2fr);
     font-family: "Inter", sans-serif;
     gap: 4px 4px;
     grid-auto-flow: row dense;
     grid-template-areas:
-        "recursos "
-        "planetas "
-        "oficiales"
-        "notificaciones_naves "
-        "lista_planetas "
-        "caracteristicas ";
+    "movimiento-flotas movimiento-flotas"
+    "lista_planetas info_planetas "
+    "lista_planetas info_planetas";
     width: 100%;
     @media (width > 768px) {
         background-color: red;
-        grid-template-rows: 0.2fr 0.4fr 0.2fr 1fr;
+    grid-template-rows: repeat(3, .2fr);
         grid-template-areas:
-    ". recursos planetas"
-    "oficiales oficiales oficiales"
-    "notificaciones_naves notificaciones_naves notificaciones_naves"
-    "lista_planetas caracteristicas caracteristicas";
+    "movimiento-flotas movimiento-flotas"
+    "lista_planetas info_planetas "
+    "lista_planetas info_planetas";
     }
 }
 
 .recursos {
     grid-area: recursos;
     background-color: yellow;
+}
 
+.configuracion-usuario {
+    grid-area: configuracion-usuario;
+    background-color: orange;
+}
+
+.global-menu {
+    grid-area: global-menu;
+    background-color: green;
+}
+
+.movimiento-flotas{
+    background-color:  skyblue;
+    grid-area: notificaciones;
+}
+
+.UserMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4px;
+    grid-template-areas:
+    "recursos configuracion-usuario"
+    "recursos global-menu";
+    grid-area: UserMenu;
+
+    @media (width > 768px) {
+    grid-template-areas:
+    "recursos configuracion-usuario"
+    "global-menu global-menu"
+    ;
+    }
 }
