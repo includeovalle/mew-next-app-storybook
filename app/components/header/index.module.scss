@@ -12,18 +12,16 @@
     grid-auto-flow: row dense;
     grid-auto-rows: 1fr;
     grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 4em 4em;
+    grid-template-rows: 4em;
     gap: 4px 4px;
     grid-template-areas:
     "logo UserMenu"
-    "notificaciones notificaciones"
     ;
     @media(width > 768px) {
-        grid-template-rows: repeat(3, 4em);
+        grid-template-rows: repeat(2, 4em);
         grid-template-areas:
         "logo UserMenu"
         "logo UserMenu"
-        "notificaciones notificaciones"
         ;
 
     }
