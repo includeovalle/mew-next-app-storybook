@@ -5,7 +5,6 @@ export { default as Modal } from './modal/';
 export { default as Header } from './header/';
 export { default as LeftMenu } from './left_menu/';
 //export { default as Card } from './card/';
-export { default as Keymap } from './keymap/';
 export { default as TextContainer } from './text_container/';
 //export { default as Footer } from './footer/';
 //export { default as ContactHandler } from './contact_handler/';

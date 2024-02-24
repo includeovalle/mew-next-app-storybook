@@ -6,19 +6,25 @@
     padding: 0 2rem;
 }
 
-.header{
-    @include flex.row(space-between, center);
-    @include bp.breakpoint(md, min) {
-    @include flex.row(space-evenly, center);
-    max-width: map-get($breakpoints, 'xl');
-    margin: 0 auto;
-    }
 
-    &__two-items{
-        height: $header-height;
-        min-height: $logo-min-height;
-        width: 100%;
-        @include flex.row(space-between, center);
+.header {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 4em 4em;
+    gap: 4px 4px;
+    grid-template-areas:
+    "logo UserMenu"
+    "notificaciones notificaciones"
+    ;
+    @media(width > 768px) {
+        grid-template-rows: repeat(3, 4em);
+        grid-template-areas:
+        "logo UserMenu"
+        "logo UserMenu"
+        "notificaciones notificaciones"
+        ;
+
     }
 }
-
