@@ -8,6 +8,8 @@ body {
     background-repeat: no-repeat;
     font-size: $font-clamp;
     font-weight: 100;
+    background-image: url('../../public/background.svg');
+    background-size: cover;
     & > main {
         max-width: $max-width;
         margin: 0 auto;

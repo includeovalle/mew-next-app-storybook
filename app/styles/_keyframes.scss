@@ -116,7 +116,7 @@
 
 //border color
 @mixin borderChange($color, $colorTwo, $duration) {
-    animation: borderChange $duration infinite;
+    animation: borderChange $duration  2;
 
     @keyframes borderChange {
         0% {
@@ -124,6 +124,8 @@
         }
         50% {
             border-color: $colorTwo;
+            border: unset;
+            outline: 2px solid $colorTwo;
         }
         100% {
             border-color: $color;
