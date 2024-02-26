@@ -25,31 +25,23 @@
 
 .circle {
     @include key.bounce(1s);
+    @extend .first-cap;
+    @include key.borderChange($primary-tint, $secondary, 4s);
     height: 60px;
     width: 60px;
     margin: 0;
-    transition: all 0.3s ease-in-out;
     border-radius: 50%;
     margin: 4px;
     background-color: transparent;
-    border: 1px groove $secondary-tint;
-    color: $white-tint;
+    color: $primary-tint;
     font-family: inherit;
-    text-shadow: $default-text-shadow;
-
-    &:hover {
-        @include key.bounce(1s);
-        @include key.borderChange($primary, $secondary-tint, 4s);
+    text-shadow: $primary-text-shadow;
         cursor: pointer;
-    }
 
     &_active {
         @extend .circle;
-        border: 1px solid $secondary-tint;
-        &:hover {
-            @include key.bounce(1s);
-            cursor: pointer;
-        }
+        border: unset;
+        outline: 2px double $primary;
     }
 
     @media(width > 768px) {

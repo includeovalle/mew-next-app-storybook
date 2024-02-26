@@ -24,6 +24,7 @@
 
 .active{
     background-color: $secondary;
+    filter: hue-rotate(180deg);
     //text-decoration: overline underline $secondary;
 }
 
@@ -35,8 +36,11 @@
     width: 100dvi;
     padding: 1rem; 
     height: auto;
+    background-color: transparent;
+    filter: hue-rotate(180deg);
     & a {
     padding: 1rem 0;
+    color: $white;
     &:hover {
         @include keyframes.changeColor($white-tint, $primary-tint, 1.5s);
     }
@@ -50,7 +54,6 @@
     }
 
     a {
-        width: calc(50% - 1rem);
         @media (width > 768px) {
             width: 100%;
         }

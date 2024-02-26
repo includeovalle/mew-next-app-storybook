@@ -14,7 +14,8 @@ $default-border-bg: rgba(114, 119, 120, .3);
 
 //Text
 //$primary-text:
-$default-text-shadow: 0px 2px 4px $primary-tint;
+$default-text-shadow: 0px 2px 4px $secondary-tint;
+$primary-text-shadow: 0px 2px 4px $primary-tint;
 $default-yellow-text-shadow: 0px 2px 4px #ffa726;
 //$secondary-text:
 
