@@ -25,7 +25,7 @@ const Index = () => {
         {currentRoute}
       </Button>
       {isMenuOpen &&
-        <Ul links onClick={() => setIsMenuOpen(!isMenuOpen)} lis={menu} exact className={'two-columns'} />
+        <Ul links nav onClick={() => setIsMenuOpen(!isMenuOpen)} lis={menu} exact className={'two-columns'} />
       }
     </LeftContainer>
   );

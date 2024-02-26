@@ -1,6 +1,6 @@
 //color
 $white: #dfe6e9;
-$white-tint: rgba(225, 242, 246, .7);
+$white-tint: rgba(225, 242, 246, .4);
 $black: #343437;
 $primary: #7e30e1;
 $primary-tint: #e26ee5;
@@ -14,7 +14,7 @@ $default-border-bg: rgba(114, 119, 120, .3);
 
 //Text
 //$primary-text:
-$default-text-shadow: 0px 2px 4px $secondary-tint;
+$default-text-shadow: 0px 2px 4px $white-tint;
 $primary-text-shadow: 0px 2px 4px $primary-tint;
 $default-yellow-text-shadow: 0px 2px 4px #ffa726;
 //$secondary-text:

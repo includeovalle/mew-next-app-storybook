@@ -26,22 +26,24 @@
 .circle {
     @include key.bounce(1s);
     @extend .first-cap;
-    @include key.borderChange($primary-tint, $secondary, 4s);
     height: 60px;
     width: 60px;
     margin: 0;
     border-radius: 50%;
     margin: 4px;
+    border:0;
+    outline: 2px double $primary;
     background-color: transparent;
     color: $primary-tint;
     font-family: inherit;
     text-shadow: $primary-text-shadow;
-        cursor: pointer;
+    cursor: pointer;
 
     &_active {
         @extend .circle;
         border: unset;
-        outline: 2px double $primary;
+        @include key.borderChange($primary-tint, $secondary, 4s);
+        outline: 2px double $primary-tint;
     }
 
     @media(width > 768px) {
@@ -149,6 +151,6 @@
 }
 
 .contacto {
-  @extend  .default;
-  @extend  .icon;
+    @extend  .default;
+    @extend  .icon;
 }
