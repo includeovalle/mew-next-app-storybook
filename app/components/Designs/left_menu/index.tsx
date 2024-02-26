@@ -7,7 +7,7 @@ const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentRoute, setCurrentRoute] = useState('');
 
-  const menu = ['planeta', 'edificios', 'hangar', 'flota', 'defensas', 'investigación', 'foro', 'estadísticas', 'chat', 'Salir']
+  const menu = ['planeta', 'edificios', 'hangar', 'flota', 'defensas', 'investigacion', 'foro', 'estadisticas', 'Salir']
 
   
   useEffect(()=>{

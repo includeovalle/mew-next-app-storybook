@@ -80,9 +80,9 @@
 }
 
 .vision-general {
+    @extend .container;
     display: grid;
     grid-template-columns:.5fr 1fr ;
-    background-color: pink;
     height: 40vh;
     grid-template-rows: repeat(3, .2fr);
     font-family: "Inter", sans-serif;
@@ -94,8 +94,6 @@
     "lista_planetas info_planetas";
     width: 100%;
     @media (width > 768px) {
-        background-color: $white-tint;
-        filter: drop-shadow(0mm 1mm 1px $primary);
         margin-left: 4px;
         grid-template-rows: repeat(3, .2fr);
         grid-template-areas:
