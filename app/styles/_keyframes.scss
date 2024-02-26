@@ -9,7 +9,7 @@
 
 
 @mixin colorchange($starting-color, $midway-color, $ending-color, $animation-duration) {
-    animation: colorChangeAnimation $animation-duration infinite;
+    animation: colorChangeAnimation $animation-duration infinite !important;
 
     @keyframes colorChangeAnimation {
         0% {

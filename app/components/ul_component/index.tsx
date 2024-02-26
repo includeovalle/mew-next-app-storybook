@@ -15,7 +15,7 @@ const Ul = ({ className = "default", exact = false, lis, otherLis, onClick, link
           lis?.map((li: React.ReactNode) => {
             const href = `/${li}`;
             const isActive = exact ? pathname === href : pathname.startsWith(href);
-            return <Link href={href} onClick={onClick} key={href}>{li}</Link>
+            return <Link className={isActive ? styles['active'] : undefined} href={href} onClick={onClick} key={href}>{li}</Link>
           })
         }
         {
