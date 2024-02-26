@@ -14,7 +14,7 @@ $default-border-bg: rgba(114, 119, 120, .3);
 
 //Text
 //$primary-text:
-$default-text-shadow: 0px 2px 4px $secondary-tint;
+$default-text-shadow: 0px 2px 4px $primary-tint;
 $default-yellow-text-shadow: 0px 2px 4px #ffa726;
 //$secondary-text:
 
@@ -29,7 +29,7 @@ $default-padding-inset: .5em;
 
 //hero
 $hero-height: 40vh;
-$logo-min-width: 120px;
+$logo-min-width: 100%;
 $logo-min-height: 50px;
 $logo-max-width: 160px;
 //$primary-button:
