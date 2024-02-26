@@ -1,0 +1,8 @@
+cp -r ./app/planeta/ ./app/edificios
+cp -r ./app/planeta/ ./app/hangar
+cp -r ./app/planeta/ ./app/flota
+cp -r ./app/planeta/ ./app/defensas
+cp -r ./app/planeta/ ./app/investigacion
+cp -r ./app/planeta/ ./app/foro
+cp -r ./app/planeta/ ./app/estadisticas
+

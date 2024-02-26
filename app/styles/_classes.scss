@@ -92,7 +92,7 @@ $font-size-first-cap-classes: create-font-size-first-cap-classes();
 
  .container{
         background-color: $white-tint;
-        filter: drop-shadow(1mm 0mm 1px $primary);
         border: 2px double $primary;
+        filter: drop-shadow(0mm 1mm 1px $primary);
 
  }
