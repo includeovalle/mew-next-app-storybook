@@ -1,4 +1,6 @@
 @use './_variables.scss' as *;
+@use './_keyframes.scss' as keyframes;
+
 //@mixins
 //create class capitalize mixin
 @mixin cap{
@@ -93,6 +95,6 @@ $font-size-first-cap-classes: create-font-size-first-cap-classes();
  .container{
         background-color: $white-tint;
         border: 2px double $primary;
-        filter: drop-shadow(0mm 1mm 1px $primary);
+        filter: drop-shadow(2px .7mm .5px $primary);
 
  }

@@ -10,9 +10,19 @@ body {
     font-weight: 100;
     background-image: url('../../public/background.svg');
     background-size: cover;
+    & > header {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        max-height: $header-max-height;
+        position: fixed;
+
+    }
     & > main {
         max-width: $max-width;
-        margin: 0 auto;
+        margin-inline: auto;
+        margin-top: calc($header-max-height + 3em);
+
     }
 
     @media (prefers-color-scheme: dark) {
