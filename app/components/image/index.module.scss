@@ -51,10 +51,36 @@
     position: absolute;
     font-size: 10px;
     bottom: -3*$default-padding-inset;
-    left: -70%;
     width: max-content;
   }
 }
+
+.drawer-icon {
+  @extend .icon;
+  @media (width > 768px) {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+.planet-card{
+  position: relative;
+  area-grid: planet-card;
+  background-color: teal;
+  height: 100%;
+  & > img {
+    height: 128px;
+    width: 128px;
+
+  }
+}
+
+.moon-card{
+  position: relative;
+  area-grid: moon-card;
+  background-color: teal;
+}
+
 .logo{
   grid-area: logo;
   @extend .default;

@@ -33,7 +33,7 @@
     margin: 4px;
     border:0;
     outline: 2px double $primary;
-    background-color: transparent;
+    background-color: $secondary;
     color: $primary-tint;
     font-family: inherit;
     text-shadow: $primary-text-shadow;
@@ -154,3 +154,11 @@
     @extend  .default;
     @extend  .icon;
 }
+
+
+.edit {
+    background-color: teal;
+    height: 32px;
+    width: 32px;
+}
+

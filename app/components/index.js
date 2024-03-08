@@ -5,6 +5,7 @@ export { default as Ul } from './ul_component/index';
 export { default as Dialog } from './dialog_modal/index';
 export { default as Hamburger } from './hamburger_modal/index';
 export { default as Container } from './section_container/index';
+export { default as PlanetDrawer } from './planet_drawer/index';
 export { MainContainer as MainContainer } from './section_container/index';
 export { InnerContainer as InnerContainer } from './section_container/index';
 export { CardContainer as CardContainer } from './section_container/index';
